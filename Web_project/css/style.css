@@ -1,0 +1,132 @@
+/* Class générique */
+.clear { clear:both; }
+.sizeLarge { width:250px; } /*a sup*/
+.textCenter { text-align:center }
+.left { float:left; }
+
+/* Toutes les pages */
+body {
+	background: url(../img/background_body.jpg) no-repeat center fixed;
+	-webkit-background-size:cover;
+	background-size:cover;
+	margin:0;
+	padding:0;
+}
+
+.btn,
+input[type="button"],		/*a sup*/
+input[type="submit"] {
+	cursor:pointer;
+	background-color:#AE9A6B;
+	color:#ffffff;
+	padding:5px 10px;
+	font-weight:bold;
+	border:1px solid #FFFFFF;
+}
+
+.btn:hover,
+input[type="button"]:hover,	/*a sup*/
+input[type="submit"]:hover {
+	background-color:#0000FF;
+}
+
+p { text-indent:50px; text-align:justify; }
+hr { color:#ae9a6b; }
+
+/* Menu de la page */
+#menu {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background:rgba( 255, 255, 255, 0.8 );
+	border:2px solid #AE9A6B;
+}
+
+#menu ul {
+	list-style-type:none;
+	margin:0;
+    padding:0;
+}
+
+#menu ul li {
+	float:left;
+	width:395px;
+}
+
+#menu ul li a {
+	color:#AE9A6B;
+	display:block;
+	padding:5px 0;
+	text-align:center;
+}
+
+#menu ul li a:hover {
+	background:rgba( 189, 183, 107, 0.8 );
+	color: #FFFFFF;
+}
+
+/* Contenu de la page */
+#page {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+	background:rgba( 255, 255, 255, 0.8 );
+	border:2px solid #AE9A6B;
+	padding:10px;
+}
+
+/* Footer de la page */
+#footer {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background:rgba( 255, 255, 255, 0.8 );
+	border:2px solid #AE9A6B;
+	padding:5px 0;
+	text-align:center;
+}
+
+/* Page reservation */
+#pageReservation ul {
+	list-style-type:none;
+	margin:0 auto;	/*a sup: auto*/
+    padding:0;
+	width:440px;	/*a sup*/
+}
+
+#pageReservation ul li {
+	padding-bottom:10px;
+}
+
+#pageReservation ul li label {
+	float:left;
+	width:175px;
+	font-weight:bold;
+}
+
+#pageReservation ul li label.sousLabel{
+	width:auto;
+	font-weight:normal;
+}
+
+#pageReservation ul li input[type="radio"],
+#pageReservation ul li input[type="checkbox"],
+#pageReservation ul li input[type="text"],
+#pageReservation ul li input[type="email"],
+#pageReservation ul li select {
+	float:left;
+	border:1px solid #AE9A6B;
+	padding:2px;
+}
+
+#pageReservation ul li input.error,
+#pageReservation ul li select.error ,
+#pageReservation ul li .repereError.error {
+	border:1px dashed #FF0000;
+	background-color:#FEEDED;
+}
+
+.dataTables_wrapper {
+	margin: 30px;
+}
